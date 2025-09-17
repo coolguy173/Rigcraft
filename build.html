@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RigCraft Build Wizard</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>RigCraft - Build Wizard</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="checker.html">Compatibility Checker</a>
+      <a href="builds.html">Pre-Made Builds</a>
+      <a href="learn.html">Learn</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Start Building</h2>
+    <form id="build-form">
+      <label>Budget (₹): <input type="number" id="budget"></label><br>
+      <label>Purpose:
+        <select id="purpose">
+          <option value="gaming">Gaming</option>
+          <option value="editing">Editing</option>
+          <option value="office">Office</option>
+          <option value="allrounder">All-Rounder</option>
+        </select>
+      </label><br>
+      <button type="submit">Generate Build</button>
+    </form>
+    <div id="build-result"></div>
+  </section>
+</body>
+</html>
